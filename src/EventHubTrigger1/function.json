@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "eventHubMessages",
+      "direction": "in",
+      "eventHubName": "sftp",
+      "connection": "EventHubConnection",
+      "cardinality": "many",
+      "consumerGroup": "$Default",
+      "identity": "SystemAssigned",
+      "fullyQualifiedNamespace": "sftpeventhub.servicebus.windows.net"
+    }
+  ]
+}
